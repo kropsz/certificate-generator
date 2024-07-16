@@ -23,7 +23,7 @@ Endpoint para criar um novo usuário:
 
 ```http
 POST /api/users
-Request Body:
+RequestBody:
 {
   "name": "Pedro",
   "lastName": "Esteves",
@@ -47,7 +47,7 @@ Endpoint para criar um novo curso:
 
 ```http
 POST /api/courses
-Request Body:
+RequestBody:
 {
   "name": "Java for Beginners",
   "description": "Course to beginners in programing language Java",
