@@ -1,0 +1,11 @@
+spring:
+    application:
+        name: certificate-generator
+
+    data:
+      mongodb:
+        uri: mongodb://root:example@localhost:27017/
+        database: msreview
+        authentication-database: admin
+        username: root
+        password: example
