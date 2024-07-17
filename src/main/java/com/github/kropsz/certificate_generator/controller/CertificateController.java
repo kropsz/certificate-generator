@@ -14,13 +14,14 @@ import lombok.RequiredArgsConstructor;
 @RequestMapping("v1/certificate")
 @RequiredArgsConstructor
 public class CertificateController {
-    
+
     private final UserCoursesService userCoursesService;
 
     @PostMapping("/generate/{userId}/{courseId}")
-    public ResponseEntity<String> generateCertificate(@PathVariable String userId, @PathVariable String courseId) {
+    public ResponseEntity<Void> generateCertificate(@PathVariable String userId,
+            @PathVariable String courseId) {
         userCoursesService.generateCertificate(userId, courseId);
-        return ResponseEntity.ok("Certificate generated");
+        return ResponseEntity.ok().build();
     }
 
 }

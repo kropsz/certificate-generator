@@ -4,8 +4,20 @@ spring:
 
     data:
       mongodb:
-        uri: mongodb://root:example@localhost:27017/
+        uri: mongodb://root:${MONGO_PASSWORD}@localhost:27017/msreview?authSource=admin
         database: msreview
         authentication-database: admin
         username: root
-        password: example
+        password: ${MONGO_PASSWORD}
+
+    mail:
+      host: smtp.gmail.com
+      port: 587
+      username: ${SPRING_MAIL_USERNAME}
+      password: ${SPRING_MAIL_PASSWORD}
+      properties:
+        mail:
+          smtp:
+            auth: true
+            starttls:
+              enable: true
