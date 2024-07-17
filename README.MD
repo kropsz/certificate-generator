@@ -1,6 +1,6 @@
 # Gerador de Certificados de Usuários em Cursos
 
-Este projeto é um sistema para gerar certificados de usuários que participaram de cursos.
+Este projeto é um sistema para gerar certificados de usuários que participaram de cursos e enviar email contendo o certificado gerado.
 
 ### Certificado Base
 <img src="img.jpg" alt="Certificado Base" width="400" height="300">
@@ -14,6 +14,7 @@ Este projeto é um sistema para gerar certificados de usuários que participaram
 - Java com Spring Framework
 - Docker e Docker Compose (MongoDB e MongoExpress)
 - IText para geração de PDFs
+- Spring Email
 
 ## Funcionalidades
 
